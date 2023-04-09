@@ -28,7 +28,8 @@ jobs:
         python -m pip install  --upgrade pip
         pip uninstall protobuf
         pip uninstall google
-        pip install protobuf==3.19.6
+#        pip install protobuf==3.19.6
+        pip install google-cloud
         touch /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/google/__init__.py
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: check things
