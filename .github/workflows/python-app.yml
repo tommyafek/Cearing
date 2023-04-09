@@ -34,6 +34,7 @@ jobs:
     - name: check things
       run: |
         ls /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/google
+        pip show protobuf
     - name: Run Train
       run: |
         python train.py
